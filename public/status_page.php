@@ -11,6 +11,7 @@ $statusDate = '';
 
 function formatDate($date) {
     $dateTime = new DateTime($date);
+    $dateTime->setTimezone(new DateTimeZone('Asia/Kolkata'));
     return $dateTime->format('F j, Y \a\t g:i A');
 }
 
